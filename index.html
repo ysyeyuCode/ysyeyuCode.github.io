@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="script.js"></script>
+
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"  rel="stylesheet">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>打开网页</title>
+</head>
+<body onkeydown="keydown()">
+
+	<div class="google icon" onclick="go('https://www.google.com/')"><i class="material-icons">launch</i></div>
+	<a href="mailto:xchaungc@163.com"><div class="github icon"><i class="material-icons">email</i></div></a>
+	<div class="copyright" title=""><i class="material-icons">copyright</i></div>
+
+	<div class="search">
+		
+		<input id="c" class="txt" type="text" name="" placeholder="Search or Enter Website" style="font-family: 'Noto Sans TC', sans-serif;">
+		<button class="btn" onclick="go(document.getElementById('c').value)" onmouseover="console.log('hover')">
+			<i class="material-icons">language</i>
+		</button>
+	</div>
+
+
+	
+
+</body>
+</html>
