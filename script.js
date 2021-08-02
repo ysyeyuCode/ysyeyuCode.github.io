@@ -1,17 +1,23 @@
 var h=localStorage.history;
 console.log(h);
+console.log(this);
 console.log("Xchuang");
 console.log("html 5");
 console.log("CSS 3");
 console.log("the source website is: 'https://xchuangc.github.io/start/'");
 
+window.alert(this)
 
 function keydown() {
+	console.log(event.keyCode)
 	if(event.keyCode == 13){
 		go(document.getElementById('c').value);
 	}
 }
 
+if (this==window);{
+	console.log("window")
+}
 
 
 function go(concent) {
